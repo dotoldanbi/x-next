@@ -1,9 +1,10 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Sidebar from "./components/Sidebar";
-import News from "./components/News";
+import NewsWrapper from "./components/NewsWrapper";
 import SessionWrapper from "./components/SessionWrapper";
-
+import { Provider } from "react-redux";
+import store from "./store";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -40,7 +41,7 @@ export default function RootLayout({ children }) {
                   className="bg-gray-100 border border-gray-200 rounded-3xl text-sm w-full px-4 py-2"
                 ></input>
               </div>
-              <News />
+              <NewsWrapper />
             </div>
           </div>
         </body>
