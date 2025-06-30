@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
     <SessionWrapper>
       <html lang="en">
         <body
-          className={`${geistSans.variable} ${geistMofno.variable} antialiased`}
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
           <div className="flex justify-between max-w-6xl mx-auto">
             <div className="hidden sm:inline border-r h-screen">

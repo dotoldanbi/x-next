@@ -84,7 +84,7 @@ export default function Input() {
       username: session.user.username,
       text,
       profileImg: session.user.image,
-      imageFileUrl: imageFileUrl,
+      image: imageFileUrl,
       timestamp: serverTimestamp(),
     });
     setPostLoading(false);
