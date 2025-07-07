@@ -3,6 +3,7 @@ import "./globals.css";
 import Sidebar from "./components/Sidebar";
 import News from "./components/News";
 import SessionWrapper from "./components/SessionWrapper";
+import CommentModal from "./components/CommentModal";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,6 +43,7 @@ export default function RootLayout({ children }) {
               <News />
             </div>
           </div>
+          <CommentModal />
         </body>
       </html>
     </SessionWrapper>

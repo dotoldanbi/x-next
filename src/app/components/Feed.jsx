@@ -26,7 +26,7 @@ export default async function Feed() {
   return (
     <div>
       {data.map((post) => (
-        <Post key={post.id} post={post} />
+        <Post key={post.id} post={post} id={post.id} />
       ))}
     </div>
   );
